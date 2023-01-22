@@ -75,14 +75,14 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
           m.reply(`*Whatsapp Bot OpenAI*
             
 *(ChatGPT)*
-Cmd: ${prefix}ai 
+Cmd: ${prefix}iqbal 
 Tanyakan apa saja kepada AI. 
 
 *(DALL-E)*
 Cmd: ${prefix}img
 Membuat gambar dari teks`)
           break;
-        case "ai": case "openai": 
+        case "iqbal": case "openai": 
           try {
             if (setting.keyopenai === "ISI_APIKEY_OPENAI_DISINI") return reply("Apikey belum diisi\n\nSilahkan isi terlebih dahulu apikeynya di file key.json\n\nApikeynya bisa dibuat di website: https://beta.openai.com/account/api-keys");
             if (!text) return reply(`Chat dengan AI.\n\nContoh:\n${prefix}${command} Apa itu resesi`);
